@@ -59,6 +59,10 @@ nav a:hover {
         margin-right: 2em;
         margin-bottom: 0;
     }
+    
+    nav li a {
+        display: inline;
+    }
 }
 
 main {
