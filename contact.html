@@ -18,17 +18,70 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li> 
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <main>
-            <section>
+            <section id="contact">
                 <h2>Get in Touch</h2>
-                <p>Skeleton for the Contact page based on wireframe</p>
+                <p>Have a question, project proposal, or collaboration inquiry? Fill out the form below or reach out directly.</p>
+                
+                <!-- Start of Contact Form -->
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Send Me a Message</legend>
+                        
+                        <!-- Name Field -->
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+                        <!-- Email Field -->
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required placeholder="name@example.com">
+
+                        <!-- Telephone Field -->
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+
+                        <!-- Select Menu for Subject/Inquiry Type -->
+                        <label for="inquiry">Inquiry Type:</label>
+                        <select id="inquiry" name="inquiry">
+                            <option value="project">Project Collaboration</option>
+                            <option value="employment">Job Opportunity</option>
+                            <option value="general">General Question</option>
+                        </select>
+
+                        <!-- Textarea for Message -->
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+
+                        <!-- Submit Button -->
+                        <input type="submit" id="submit" value="Send Message">
+                    </fieldset>
+                </form>
+                <!-- End of Contact Form -->
             </section>
+
+            <!-- Required Advanced Layout & Multimedia Integration -->
+            <article>
+                <h2>Developer Overview & Media</h2>
+                <p>Watch a brief video introduction or listen to the audio summary of my professional portfolio.</p>
+                
+                <!-- Video Element with Accessibility Fallback -->
+                <video controls width="400">
+                    <source src="media/intro-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag. <a href="media/intro-video.mp4">Download video transcript</a>.
+                </video>
+
+                <!-- Audio Element -->
+                <audio controls>
+                    <source src="media/intro-audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element. <a href="media/intro-audio.mp3">Download audio transcript</a>.
+                </audio>
+            </article>
         </main>
 
         <!-- Use the footer area to add webpage footer content -->
