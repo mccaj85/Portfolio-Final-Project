@@ -81,7 +81,7 @@ footer {
     margin-top: 2em;
 }
 
-/* Responsive Media Element Sizing */
+/* Video Style Rules */
 video {
     max-width: 100%;
     height: auto;
@@ -109,7 +109,6 @@ th, td {
     text-align: left;
 }
 
-/* Headers: black background, white text, regular weight */
 th {
     background-color: #000;
     color: #fff;
@@ -117,7 +116,6 @@ th {
     font-weight: normal;
 }
 
-/* First column (Technology names): bold */
 td:first-child {
     font-weight: bold;
 }
