@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!-- This website template was created by: Jessica McCarthy-->
+<!-- Created by: Jessica McCarthy -->
 <html lang="en">
 <head>
-    <title>Contact - Portfolio Project Template</title>
+    <title>Contact - Jessica McCarthy Portfolio</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,11 +10,10 @@
 <body>
 
     <div id="container">
-        <!-- Use the header area for the website name or logo -->
         <header>
-            <h1>Contact</h1>
+            <h1>Contact Jessica McCarthy</h1>
         </header>
-        <!-- Use the nav area to add hyperlinks to other pages within the website -->
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li> 
@@ -24,29 +23,26 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <main>
+
+        <main class="contact-layout">
             <section id="contact">
                 <h2>Get in Touch</h2>
-                <p>Have a question, project proposal, or collaboration inquiry? Fill out the form below or reach out directly.</p>
+                <p>Have a question, project proposal, or software development opportunity? Fill out the form below and I will respond promptly.</p>
                 
                 <!-- Start of Contact Form -->
                 <form action="#" method="post">
                     <fieldset>
                         <legend>Send Me a Message</legend>
                         
-                        <!-- Name Field -->
                         <label for="name">Full Name:</label>
                         <input type="text" id="name" name="name" required placeholder="Enter your full name">
 
-                        <!-- Email Field -->
                         <label for="email">Email Address:</label>
                         <input type="email" id="email" name="email" required placeholder="name@example.com">
 
-                        <!-- Telephone Field -->
                         <label for="phone">Phone Number:</label>
                         <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
 
-                        <!-- Select Menu for Subject/Inquiry Type -->
                         <label for="inquiry">Inquiry Type:</label>
                         <select id="inquiry" name="inquiry">
                             <option value="project">Project Collaboration</option>
@@ -54,37 +50,39 @@
                             <option value="general">General Question</option>
                         </select>
 
-                        <!-- Textarea for Message -->
                         <label for="message">Your Message:</label>
                         <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
 
-                        <!-- Submit Button -->
                         <input type="submit" id="submit" value="Send Message">
                     </fieldset>
                 </form>
                 <!-- End of Contact Form -->
             </section>
 
-            <!-- Advanced Layout & Multimedia Integration -->
-            <article>
-                <h2>Developer Overview & Media</h2>
-                <p>Watch this brief video or listen to the audio summary of my professional portfolio.</p>
-                
-                <!-- Video Element -->
-                <video controls>
-                    <source src="media/intro-video.mp4" type="video/mp4">
-                    Your browser does not support the video element. <a href="media/intro-video.mp4">Download video transcript</a>.
-                </video>
+            <!-- Sidebar Article for Direct Info & Multimedia -->
+            <aside class="contact-sidebar">
+                <article class="card">
+                    <h2>Connect &amp; Portfolio Media</h2>
+                    <p><strong>Location:</strong> South Florida</p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/mccaj85" target="_blank" rel="noopener">github.com/mccaj85</a></p>
+                    
+                    <h3>Portfolio Video Overview</h3>
+                    <video controls>
+                        <source src="assets/intro-video.mp4" type="video/mp4">
+                        <track kind="captions" src="assets/captions.vtt" srclang="en" label="English" default>
+                        Your browser does not support the video element.
+                    </video>
 
-                <!-- Audio Element -->
-                <audio controls>
-                    <source src="media/intro-audio.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element. <a href="media/intro-audio.mp3">Download audio transcript</a>.
-                </audio>
-            </article>
+                    <h3>Audio Introduction</h3>
+                    <audio controls>
+                        <source src="assets/intro-audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p class="transcript"><strong>Transcript:</strong> Hello, I am Jessica McCarthy, a software development student specializing in C++ programming and responsive web design. Thank you for visiting my portfolio.</p>
+                </article>
+            </aside>
         </main>
 
-        <!-- Use the footer area to add webpage footer content -->
         <footer>
             <p>&copy; Jessica McCarthy, Copyright 2026. All Rights Reserved.</p>
         </footer>
