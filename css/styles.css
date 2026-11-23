@@ -1,13 +1,13 @@
- /*
+/*
 Author: Jessica McCarthy
-Date: 11/17/2026
+Date: 11/23/2026
 File Name: styles.css
 */
 
 /* CSS Reset*/
-header, nav, main, footer, h1, h2, div, ul, li, section, article, aside, audio, video {
+header, nav, main, footer, h1, h2, div, ul, li, section, article, aside, audio, video, iframe {
 	margin: 0;
-	padding:0;
+	padding: 0;
 	border: 0;
 }
 
@@ -81,10 +81,26 @@ footer {
     margin-top: 2em;
 }
 
-/* Video Style Rules */
-video {
+/* Video, Audio & Media Style Rules */
+video, iframe {
+    display: block;
     max-width: 100%;
     height: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.75em;
+}
+
+iframe {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+audio {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 0.75em;
 }
 
  /* Style Rules for Table */
@@ -197,5 +213,9 @@ img {
 @media screen and (min-width: 768px) {
     .about-box {
         flex-direction: row;
+    }
+
+    .profile-photo {
+        flex: 0 0 220px;
     }
 }

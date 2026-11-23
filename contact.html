@@ -26,37 +26,46 @@
 
         <main class="contact-layout">
             <section id="contact">
-                <h2>Get in Touch</h2>
-                <p>Have a question, project proposal, or software development opportunity? Fill out the form below and I will respond promptly.</p>
-                
-                <!-- Start of Contact Form -->
-                <form action="#" method="post">
-                    <fieldset>
-                        <legend>Send Me a Message</legend>
-                        
-                        <label for="name">Full Name:</label>
-                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                <div id="form">
+                    <h2>Get in Touch</h2>
+                    <p>Have a question, project proposal, or software development opportunity? Complete the form below and I will respond promptly.</p>
+                    
+                    <!-- Start Form -->
+                    <form class="form-grid">
+                        <fieldset>
+                            <legend>Contact Information</legend>
+                            
+                            <label for="fName">First Name:</label>
+                            <input type="text" name="fName" id="fName" required>
 
-                        <label for="email">Email Address:</label>
-                        <input type="email" id="email" name="email" required placeholder="name@example.com">
+                            <label for="lName">Last Name:</label>
+                            <input type="text" name="lName" id="lName" required>
 
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" required>
 
-                        <label for="inquiry">Inquiry Type:</label>
-                        <select id="inquiry" name="inquiry">
-                            <option value="project">Project Collaboration</option>
-                            <option value="employment">Job Opportunity</option>
-                            <option value="general">General Question</option>
-                        </select>
+                            <label for="phone">Phone:</label>
+                            <input type="tel" name="phone" id="phone">
+                        </fieldset>
 
-                        <label for="message">Your Message:</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                        <fieldset>
+                            <legend>Additional Information</legend>
+                            
+                            <label for="inquiry">Inquiry Type:</label>
+                            <select name="inquiry" id="inquiry">
+                                <option value="project">Project Collaboration</option>
+                                <option value="employment">Job Opportunity</option>
+                                <option value="general">General Question</option>
+                            </select>
 
-                        <input type="submit" id="submit" value="Send Message">
-                    </fieldset>
-                </form>
-                <!-- End of Contact Form -->
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message" rows="5" cols="35" required></textarea>
+                        </fieldset>
+
+                        <input type="submit" id="submit" value="Submit" class="btn">
+                    </form>
+                    <!-- End Form -->
+                </div>
             </section>
 
             <!-- Sidebar Article for Direct Info & Multimedia -->
@@ -65,20 +74,17 @@
                     <h2>Connect &amp; Portfolio Media</h2>
                     <p><strong>Location:</strong> South Florida</p>
                     <p><strong>GitHub:</strong> <a href="https://github.com/mccaj85" target="_blank" rel="noopener">github.com/mccaj85</a></p>
-                    
-                    <h3>Portfolio Video Overview</h3>
-                    <video controls>
-                        <source src="assets/intro-video.mp4" type="video/mp4">
-                        <track kind="captions" src="assets/captions.vtt" srclang="en" label="English" default>
-                        Your browser does not support the video element.
-                    </video>
+            
+                    <h3>Web Design Overview</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pw9coI5Ugbo?si=cuh7VG8JFTAPLNE0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p><strong>Video Summary &amp; Captions:</strong> Closed captions are available directly in the YouTube player. This video highlights the importance and usage of web development.</p>
 
                     <h3>Audio Introduction</h3>
                     <audio controls>
-                        <source src="assets/intro-audio.mp3" type="audio/mpeg">
+                        <source src="assets/audio1.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                    <p class="transcript"><strong>Transcript:</strong> Hello, I am Jessica McCarthy, a software development student specializing in C++ programming and responsive web design. Thank you for visiting my portfolio.</p>
+                    <p class="transcript"><strong>Transcript:</strong> Instrumental modern synthpop track with no spoken word.</p>
                 </article>
             </aside>
         </main>
